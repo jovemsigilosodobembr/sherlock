@@ -30,20 +30,20 @@
 </p>
 
 
-## Installation
+## Instalação
 
 ```console
-# clone the repo
-$ git clone https://github.com/sherlock-project/sherlock.git
-
-# change the working directory to sherlock
-$ cd sherlock
-
-# install the requirements
-$ python3 -m pip install -r requirements.txt
+git clone https://github.com/sherlock-project/sherlock.git
+cd sherlock
 ```
 
-## Usage
+# instale os requisitos
+
+```
+python3 -m pip install -r requirements.txt
+```
+
+## Uso
 
 ```console
 $ python3 sherlock --help
@@ -54,30 +54,29 @@ usage: sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT]
                 [--browse] [--local]
                 USERNAMES [USERNAMES ...]
 
-Sherlock: Find Usernames Across Social Networks (Version 0.14.2)
+Sherlock: encontrar nomes de usuário em redes sociais (Version 0.14.2)
 
-positional arguments:
-  USERNAMES             One or more usernames to check with social networks.
-                        Check similar usernames using {%} (replace to '_', '-', '.').
+  USERNAMES            Um ou mais nomes de usuário para verificar nas redes sociais.
+                        Verifique nomes de usuário semelhantes usando{%} (replace to '_', '-', '.').
 
 optional arguments:
-  -h, --help            show this help message and exit
-  --version             Display version information and dependencies.
+  -h, --help           mostre esta mensagem de ajuda e saia
+  --version             Exibe informações de versão e dependências.
   --verbose, -v, -d, --debug
-                        Display extra debugging information and metrics.
+                        Exiba informações e métricas extras de depuração.
   --folderoutput FOLDEROUTPUT, -fo FOLDEROUTPUT
-                        If using multiple usernames, the output of the results will be
-                        saved to this folder.
+                       Se estiver usando vários nomes de usuário, a saída dos resultados será
+                       salvo nesta pasta.
   --output OUTPUT, -o OUTPUT
-                        If using single username, the output of the result will be saved
-                        to this file.
-  --tor, -t             Make requests over Tor; increases runtime; requires Tor to be
-                        installed and in system path.
-  --unique-tor, -u      Make requests over Tor with new Tor circuit after each request;
-                        increases runtime; requires Tor to be installed and in system
-                        path.
-  --csv                 Create Comma-Separated Values (CSV) File.
-  --xlsx                Create the standard file for the modern Microsoft Excel
+                       Se estiver usando um único nome de usuário, a saída do resultado será salva
+                        a este arquivo.
+  --tor, -t             Faça requisições pelo Tor; aumenta o tempo de execução; requer que o Tor seja
+                       instalado e no caminho do sistema.
+  --unique-tor, -u      Faça solicitações pelo Tor com o novo circuito Tor após cada solicitação;
+                        aumenta o tempo de execução; requer que o Tor esteja instalado e no sistema
+                        caminho.
+  --csv                 Crie um arquivo de valores separados por vírgula (CSV).
+  --xlsx               Crie o arquivo padrão para o Microsoft Excel moderno
                         spreadsheet (xslx).
   --site SITE_NAME      Limit analysis to just the listed sites. Add multiple options to
                         specify more than one site.
